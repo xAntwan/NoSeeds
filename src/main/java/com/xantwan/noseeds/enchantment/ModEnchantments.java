@@ -3,6 +3,7 @@ package com.xantwan.noseeds.enchantment;
 import com.xantwan.noseeds.NoSeeds;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentType;
+import net.minecraft.item.AxeItem;
 import net.minecraft.item.HoeItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
@@ -16,6 +17,10 @@ public class ModEnchantments {
     public static RegistryObject<Enchantment> SEEDBEGONE =
             ENCHANTMENTS.register("seed_be_gone", () -> new SeedBeGoneEnchantment(
                     Enchantment.Rarity.COMMON, EnchantmentType.create("HOE", i -> i instanceof HoeItem)));
+
+    public static RegistryObject<Enchantment> SAPLINGBEGONE =
+            ENCHANTMENTS.register("sapling_be_gone", () -> new SaplingBeGoneEnchantment(
+                    Enchantment.Rarity.COMMON, EnchantmentType.create("AXE", i -> i instanceof AxeItem)));
 
     public static void register(IEventBus eventBus) {
         ENCHANTMENTS.register(eventBus);

@@ -1,3 +1,6 @@
 {
-  "enchantment.noseeds.seed_be_gone": "Seed Be Gone"
+  "enchantment.noseeds.seed_be_gone": "Seed Be Gone",
+  "enchantment.noseeds.seed_be_gone.desc": "Deletes picked up seeds while enchanted item is held.",
+  "enchantment.noseeds.sapling_be_gone": "Sapling Be Gone",
+  "enchantment.noseeds.sapling_be_gone.desc": "Deletes picked up saplings while enchanted item is held."
 }
