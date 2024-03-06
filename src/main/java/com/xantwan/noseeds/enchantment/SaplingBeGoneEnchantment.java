@@ -1,12 +1,12 @@
 package com.xantwan.noseeds.enchantment;
 
 
-import net.minecraft.enchantment.Enchantment;
-import net.minecraft.enchantment.EnchantmentType;
-import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.EnchantmentCategory;
 
 public class SaplingBeGoneEnchantment extends Enchantment {
-    protected SaplingBeGoneEnchantment(Rarity pRarity, EnchantmentType pCategory, EquipmentSlotType... pApplicableSlots) {
+    protected SaplingBeGoneEnchantment(Enchantment.Rarity pRarity, EnchantmentCategory pCategory, EquipmentSlot... pApplicableSlots) {
         super(pRarity, pCategory, pApplicableSlots);
     }
 
